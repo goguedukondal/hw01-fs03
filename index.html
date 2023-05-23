@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <title>Home Work 01</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      let div = React.createElement(
+        "div",
+        { style: { margin: "30px auto", width: "50vw" } },
+        [
+          React.createElement(
+            "div",
+            null,
+            React.createElement("h2", null, "Topics Covered")
+          ),
+          React.createElement(
+            "div",
+            { style: { marginTop: "50px" } },
+            React.createElement(
+              "p",
+              null,
+              "The Following is the list of all the topics we cover in the MDN learning area"
+            )
+          ),
+          React.createElement("div", { style: { marginTop: "50px" } }, [
+            React.createElement(
+              "p",
+              { style: { color: "blue", textDecoration: "underLine" } },
+              "Getting started with the web"
+            ),
+            React.createElement(
+              "p",
+              { style: { marginLeft: "30px" } },
+              "Provides a practical introduction to wed development for complete beginners"
+            ),
+          ]),
+          React.createElement("div", { style: { marginTop: "50px" } }, [
+            React.createElement(
+              "p",
+              { style: { color: "blue", textDecoration: "underLine" } },
+              "HTML---Strucuring the web"
+            ),
+            React.createElement(
+              "p",
+              { style: { marginLeft: "30px" } },
+              "HTML is a language that we use to structure diffent parts of our content and define what hteir meaning or purpose is. This topic teaches HTML in detail "
+            ),
+          ]),
+          React.createElement("div", { style: { marginTop: "50px" } }, [
+          React.createElement(
+            "p",
+            { style: { color: "blue", textDecoration: "underLine" } },
+            "CSS---Styling the web"
+          ),
+          React.createElement(
+            "p",
+            { style: { marginLeft: "30px" } },
+            "CSS is the language that we use to controle our web contents styles and layout, as well as adding behaviour like animation. This topic provides comprehensive coverage of CSS"
+          ),
+        ])
+        ]
+      );
+      ReactDOM.render(div, document.getElementById("root"));
+    </script>
+  </body>
+</html>
